@@ -1,0 +1,44 @@
+{
+  "name": "promo-2023-cncn1.0",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CNCN 1.0 in 2023 Promotion Site",
+  "author": "cancaonovachor",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write '**/*.js'"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-breakpoints": "^1.3.10",
+    "gatsby-plugin-fontawesome-css": "^1.2.0",
+    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-offline": "^6.10.0",
+    "gatsby-plugin-react-helmet": "^6.10.0",
+    "gatsby-plugin-sass": "^6.0.0",
+    "gatsby-plugin-typography": "^5.10.0",
+    "gatsby-plugin-use-query-params": "^1.0.1",
+    "gatsby-remark-embed-youtube": "^0.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.23",
+    "sass": "^1.56.1",
+    "typography": "^0.16.21",
+    "use-query-params": "^2.2.1"
+  },
+  "engines": {
+    "node": ">= 18"
+  }
+}
