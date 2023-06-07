@@ -249,11 +249,12 @@ const Main = props => {
       </p>
       <p>
         <b>演奏曲：</b>
-        <br></br>・Adrian Willaert - Vecchie letrose
-        <br></br>・Josquin des Prez - Ave Maria
-        <br></br>・Claude Debussy - Yver, vous n'estes qu'un Villain
-        <br></br>・Olivier Messiaen - O Sacrum Convivium!
-        <br></br>・三善晃 - 地球へのピクニック
+        <br></br>The Peacemakersより - Karl Jenkins
+        <br></br>・Peace, Peace!
+        <br></br>・Healing light
+        <br></br>・Dona nobis pacem
+        <br></br>
+        <br></br>・菅野よう子 - 花は咲く
       </p>
       {close}
     </article>
