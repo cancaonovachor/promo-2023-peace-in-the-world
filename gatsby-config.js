@@ -9,7 +9,7 @@ const breakPoints = {
 module.exports = {
   siteMetadata: {
     title: `Peace in the world 2023`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.peacemakers.cancaonovachor.com`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
