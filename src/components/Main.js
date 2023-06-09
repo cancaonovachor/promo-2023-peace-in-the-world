@@ -176,7 +176,7 @@ const Main = props => {
         <p>2023年9月21日、国連が定めた「国際平和デー」に、世界十数カ国の合唱団が24時間リレーで
           Karl Jenkins作曲「The Peacemakers」を演奏するコンサートを開催します。
           あらゆる人種・宗教・文化の人々が共に平和を作ることを表したこの曲を通じて、国籍や文化の違いを超えて平和への願いを共有します。
-          日本では、スイス在住のドイツ人指揮者、ディーター・ワーグナーさんを迎え、
+          日本では、スイス在住のドイツ人指揮者、Dieter Wagnerさんを迎え、
           個性豊かな3つの合唱団によるジョイントコンサートを9月18日（月・祝）に開催します。
           「The Peacemakers」の一部曲目に、珠玉のドイツ作品を加えたプログラムをお送りします。
           このコンサートの抜粋動画を、世界に向けて9月21日（木）に発信します。</p>
@@ -204,20 +204,20 @@ const Main = props => {
       </p>
       <p>
         <b>演奏曲：</b>
-        <br></br>「Advent-Motetten op.176」(邦訳:9つの待降節のモテット 作品176)
-        <br></br>　1. Ad te levavi（神よ、わたしは心をこめてあなたを仰ぐ）
-        <br></br>　2. Universi（あなたに望みをおく者はみな）
-        <br></br>　3. Ex Sion（限りなく美しいシオンから神は光り輝く）
-        <br></br>　4. Deus tu convertens（神よ、顧みてわたしたちに命を得させ）
-        <br></br>　5. Qui sedes（ケルビムの上に座す神よ）
-        <br></br>　6. Benedixisti（神よ、あなたは御自分の地を豊かに恵み）
-        <br></br>　7. Rorate coeli（天よ露を滴らせ、雲よ義人を降らせよ）
-        <br></br>　8. Prope est Domini（より頼むすべての人）
-        <br></br>　9. Ave Maria（聖なるマリアよ）
+        <br></br>「Advent-Motetten op.176」
+        <br></br>　1. Ad te levavi
+        <br></br>　2. Universi
+        <br></br>　3. Ex Sion
+        <br></br>　4. Deus tu convertens
+        <br></br>　5. Qui sedes
+        <br></br>　6. Benedixisti
+        <br></br>　7. Rorate coeli
+        <br></br>　8. Prope est Domini
+        <br></br>　9. Ave Maria
         <br></br>作曲:J.G.Rheinberger
       </p>
       <br></br>
-      <h3>2nd Stage: CancaoNova単独</h3>
+      <h3>CancaoNova</h3>
       <p>
         一言があればここに挿入
       </p>
@@ -238,14 +238,13 @@ const Main = props => {
       <p>
         <b>演奏曲：</b>
         <br></br>・Jauchzet dem Herrn, alle Welt WoO.28
-        <br/>　（全地よ、主に向かって歓喜の声をあげよ WoO.28）
-        <br></br>・3 Psalms op.78（3つの詩篇 op.78）
-        <br></br>作曲：Felix Mendelssohn Bartholdy (F.メンデルスゾーン）
+        <br></br>・3 Psalms op.78
+        <br></br>作曲：Felix Mendelssohn Bartholdy
       </p>
       <br></br>
       <h3>4th Stage: 合同演奏</h3>
       <p>
-      スイス在住のドイツ人指揮者、ディーター・ワーグナーさんを迎え、Karl Jenkins作曲「The Peacemakers」を演奏を開催します。
+      スイス在住のドイツ人指揮者、Dieter Wagnerさんを迎え、Karl Jenkins作曲「The Peacemakers」を演奏を開催します。
       </p>
       <p>
         <b>演奏曲：</b>
@@ -253,8 +252,6 @@ const Main = props => {
         <br></br>・Peace, Peace!
         <br></br>・Healing light
         <br></br>・Dona nobis pacem
-        <br></br>
-        <br></br>・菅野よう子 - 花は咲く
       </p>
       {close}
     </article>

@@ -91,7 +91,7 @@ const Header = props => {
               }}
               style={{marginRight: '1.9em'}}
             >
-              ディーター・ワーグナー
+              Dieter Wagner
             </a>
             <br />
             合唱{' '}
