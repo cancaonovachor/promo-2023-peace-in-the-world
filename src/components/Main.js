@@ -4,7 +4,7 @@ import zentai from '../images/zentai-ticc.jpg'
 import balss from '../images/balss.jpg'
 import tbyc from '../images/tbyc.jpg'
 import haishin from '../images/cncn1.0-haishin.jpg'
-import nyujo from '../images/cncn1.0-nyuujo.jpeg'
+import nyujo from '../images/nyujo-min.png'
 import wagner from '../images/wagner.jpeg'
 import access from '../images/access.png'
 import { useQueryParam, StringParam } from 'use-query-params'
@@ -76,6 +76,8 @@ const Main = props => {
           2016年7月創団。団名はポルトガル語で“新しい歌”。あっと驚くような合唱活動を志す合唱集団。出身母体/年齢/性別/居住地にとらわれない、新しいサウンド・合唱スタイルを目指して活動中。以下のような新しい取り組みを実施。
           <br /><br />
           主な出演ステージは東京国際合唱コンクール、宝塚国際室内合唱コンクール、声楽アンサンブルコンテスト、全日本合唱コンクール。（2021年度）
+          <br/><br/>
+          第3,4回東京国際合唱コンクール同声合唱部門《カテゴリーウィナー》、第72回全日本合唱コンクール全国大会 同声合唱の部《銀賞》、第12回声楽アンサンブルコンテスト全国大会2019《金賞》（予選2位・本選出場）。
         </p>
         {close}
       </article>
@@ -169,22 +171,40 @@ const Main = props => {
           {/* <div class="youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/TMVrcz3AG7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
-          </div> */}<h2 className="major">Stage</h2>
-          ※マテリアルとなる画像、動画があればここに挿入
-          ※背景色要調整？
-        
+          </div> */}<h2 className="major">Concept</h2>        
         <p>2023年9月21日、国連が定めた「国際平和デー」に、世界十数カ国の合唱団が24時間リレーで
           Karl Jenkins作曲「The Peacemakers」を演奏するコンサートを開催します。
           あらゆる人種・宗教・文化の人々が共に平和を作ることを表したこの曲を通じて、国籍や文化の違いを超えて平和への願いを共有します。
           日本では、スイス在住のドイツ人指揮者、Dieter Wagnerさんを迎え、
           個性豊かな3つの合唱団によるジョイントコンサートを9月18日（月・祝）に開催します。
           「The Peacemakers」の一部曲目に、珠玉のドイツ作品を加えたプログラムをお送りします。
-          このコンサートの抜粋動画を、世界に向けて9月21日（木）に発信します。</p>
-        <p>ステージ情報は <a className="use-border" href="javascript:;" onClick={async () => {
+          このコンサートの抜粋動画を、世界に向けて9月21日（木）に発信します。
+          <br/>
+          ステージ情報は <a className="use-border" href="javascript:;" onClick={async () => {
           await props.onCloseArticle();
           props.onOpenArticle('explanation');
           }}>こちら</a> から
-        </p>
+          </p>
+        
+        
+        
+          <h3>世界配信</h3>
+          <p>
+            「国際平和デー」9月21日（木）、参加国で最初に20時を迎えるニュージーランドを皮切りに、タイムゾーンの順番に現地時間20時から各国の演奏が配信されます。日本の演奏配信は、日本時間19時半頃からを予定（配信環境等の事情により変更になる可能性があります）。企画団体TimeDateのウェブサイト上にて、本演奏会の抜粋動画をお送りします。配信期間10月8日まで（予定）。
+            <a 
+             className='user-border'
+            href='https://jpn01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.timedate.ch%2F&data=05%7C01%7C%7C5406cc30fe1d4362f52108db5bd35e10%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638204736481035579%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=0mE5HY4I6yt%2BhAW1Aat8bERNb4nBoBZ8WHPLRbikkGc%3D&reserved=0'
+            target='_blank'
+            >
+              www.timedate.ch
+              </a>
+            
+          </p>
+          <h3>国内配信</h3>
+          <p>
+            本演奏会の全ステージ動画を、9月XX日(X)XX:XX- からZAIKOにて配信します。 現地に足を運ぶのが難しい方も、ぜひご覧ください。
+            →日付確定したら各コンテンツに反映
+          </p>
         {close}
       </article>
 
@@ -196,62 +216,39 @@ const Main = props => {
       style={{ display: 'none' }}
     >
       <h2 className="major">Stage</h2>
-      ※ステージ順は仮<br></br>
-      ※横長の画像があればほしいかも
-      <h3>1st Stage: BALSS 単独 </h3>
-      <p>
-        一言があればここに挿入
-      </p>
+      <h3>BALSS</h3>
       <p>
         <b>演奏曲：</b>
-        <br></br>「Advent-Motetten op.176」
-        <br></br>　1. Ad te levavi
-        <br></br>　2. Universi
-        <br></br>　3. Ex Sion
-        <br></br>　4. Deus tu convertens
-        <br></br>　5. Qui sedes
-        <br></br>　6. Benedixisti
-        <br></br>　7. Rorate coeli
-        <br></br>　8. Prope est Domini
-        <br></br>　9. Ave Maria
-        <br></br>作曲:J.G.Rheinberger
+        <br></br>・Advent-Motetten op.176 - Josef Rheinberger
       </p>
       <br></br>
       <h3>CancaoNova</h3>
       <p>
-        一言があればここに挿入
-      </p>
-      <p>
         <b>演奏曲：</b>
-        <br></br>・Heinrich Schütz - Viel werden kommen von Morgen und von Abend
-        <br></br>・Heinrich Schütz - Sammelt zuvor das Unkraut
-        <br></br>・Mendelssohn - Beati Morti
-        <br></br>・Schumann - Die Minnesänger
-        <br></br>・Richard Strauss - Fröhlich im Maien
-        <br></br>・Marcus Ludwig - Tenebrae
+        <br></br>・Viel werden kommen von Morgen und von Abend - Heinrich Schütz
+        <br></br>・Sammelt zuvor das Unkraut - Heinrich Schütz
+        <br></br>・Beati Morti - Felix Mendelssohn
+        <br></br>・Die Minnesänger - Robert Schumann
+        <br></br>・Fröhlich im Maien - Richard Strauss
+        <br></br>・Tenebrae - Marcus Ludwig
       </p>
       <br></br>
-      <h3>3rd Stage: Tokyo Bay Youth Choir単独</h3>
-      <p>
-        一言があればここに挿入
-      </p>
+      <h3>Tokyo Bay Youth Choir</h3>
       <p>
         <b>演奏曲：</b>
-        <br></br>・Jauchzet dem Herrn, alle Welt WoO.28
-        <br></br>・3 Psalms op.78
-        <br></br>作曲：Felix Mendelssohn Bartholdy
+        <br></br>・Jauchzet dem Herrn, alle Welt WoO.28 - Felix Mendelssohn
+        <br></br>・ 3 Psalms op.78 - Felix Mendelssohn
       </p>
       <br></br>
-      <h3>4th Stage: 合同演奏</h3>
+      <h3>合同演奏</h3>
       <p>
-      スイス在住のドイツ人指揮者、Dieter Wagnerさんを迎え、Karl Jenkins作曲「The Peacemakers」を演奏を開催します。
+      スイス在住のドイツ人指揮者、Dieter Wagnerさんを迎え、Karl Jenkins作曲「The Peacemakers」を演奏します。
       </p>
       <p>
         <b>演奏曲：</b>
-        <br></br>The Peacemakersより - Karl Jenkins
-        <br></br>・Peace, Peace!
-        <br></br>・Healing light
-        <br></br>・Dona nobis pacem
+        <br></br>・Karl Jenkins - Peace, Peace!
+        <br></br>・Karl Jenkins - Healing light
+        <br></br>・Karl Jenkins - Dona nobis pacem
       </p>
       {close}
     </article>
@@ -311,7 +308,7 @@ const Main = props => {
           演奏会への入場チケットは
         <a className="use-border" href="https://passmarket.yahoo.co.jp/event/show/detail/023pm8ynq6r21.html" target="_blank">こちら</a>
         <br/>
-        デジタルアートと合唱の融合など、新しい演奏会のスタイルを是非とも現場にてお聞き下さい。
+        
         </p>
         <br/>
         <h3>配信チケット (ZAIKO)</h3>
