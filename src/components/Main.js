@@ -227,7 +227,7 @@ const Main = props => {
         <b>演奏曲：</b>
         <br></br>・Viel werden kommen von Morgen und von Abend - Heinrich Schütz
         <br></br>・Sammelt zuvor das Unkraut - Heinrich Schütz
-        <br></br>・Beati Morti - Felix Mendelssohn
+        <br></br>・Beati Mortui - Felix Mendelssohn
         <br></br>・Die Minnesänger - Robert Schumann
         <br></br>・Fröhlich im Maien - Richard Strauss
         <br></br>・Tenebrae - Marcus Ludwig
