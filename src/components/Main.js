@@ -192,20 +192,20 @@ const Main = props => {
         </span>
         <p>
           演奏会への入場チケットは
-        <a className="use-border" href="https://passmarket.yahoo.co.jp/event/show/detail/023pm8ynq6r21.html" target="_blank">こちら</a>
+        <a className="use-border" href="https://passmarket.yahoo.co.jp/event/show/detail/02bgiiyenk431.html" target="_blank">こちら</a>
         <br/>
         
         </p>
         <br/>
         <h3>配信チケット (ZAIKO)</h3>
         <span className="image-main main">
-        <a className="use-border" href="https://zaiko.io/event/354406" target="_blank">
+        <a className="use-border" href="https://cancaonova.zaiko.io/item/357417" target="_blank">
           <img src={haishin} alt="" />
           </a>
         </span>
         <p>
         配信チケットは
-        <a className="use-border" href="https://zaiko.io/event/354406" target="_blank">こちら</a>
+        <a className="use-border" href="https://cancaonova.zaiko.io/item/357417" target="_blank">こちら</a>
         <br/>
         遠方にお住まいの方や当日現地にお越し頂けない方も、こちらよりライブ配信を視聴いただけます。
         </p>
