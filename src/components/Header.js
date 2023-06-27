@@ -1,188 +1,68 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import pic02 from '../images/shirotokamojinashi.png'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { useBreakpoint } from 'gatsby-plugin-breakpoints'
+import { LinkComponent, BreakpointHeader } from './common/Headers'
 
 const Header = props => {
   const breakpoints = useBreakpoint()
   return (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-      {/* <div className="logo">
-      <a href="https://cancaonovachor.com/">
-        <img src={pic02} alt="" />
-      </a>
-    </div> */}
       <div className="content">
         <div className="inner">
-          {/* {breakpoints.md ? (
-            <h1>
-              <a
-                className="use-title-nova"
-                href="javascript:;"
-                onClick={() => {
-                  props.onOpenArticle('nova')
-                }}
-              >
-                CancaoNova
-              </a>{' '}
-              ×{' '}
-              <a
-                className="use-title-ol"
-                href="javascript:;"
-                onClick={() => {
-                  props.onOpenArticle('ol')
-                }}
-              >
-                Ohta Laboratory
-              </a>
-            </h1>
-          ) : (
-            <h1>
-              <a
-                className="use-title-nova"
-                href="javascript:;"
-                onClick={() => {
-                  props.onOpenArticle('nova')
-                }}
-              >
-                CancaoNova
-              </a>
-              <br />×<br />
-              <a
-                className="use-title-ol"
-                href="javascript:;"
-                onClick={() => {
-                  props.onOpenArticle('ol')
-                }}
-              >
-                Ohta Laboratory
-              </a>
-            </h1>
-          )} */}
-
-          
           <h1>国際平和の日コンサート</h1>
           <h2 >～ 世界をつなぐ24時間コンサートリレー ～</h2>
-          {/* <h2 >~ in 24 hours around the world ~</h2> */}
-          {breakpoints.md ? (
-            <h2>2023.9.18(Mon.) 14:00- (open 13:30)</h2>
-          ) : (
-            <h3>2023.9.18(Mon.) 14:00- (open 13:30)</h3>
-          )}
+          <BreakpointHeader breakpoints={breakpoints} content="2023.9.18(Mon.) 14:00- (open 13:30)" />
+          <BreakpointHeader breakpoints={breakpoints} content="八王子市芸術文化会館 いちょうホール" isLarge={true} />
 
-          {breakpoints.md ? (
-            <h2>八王子市芸術文化会館 いちょうホール</h2>
-          ) : (
-            <h2>
-              八王子市芸術文化会館
-              <br /> いちょうホール
-            </h2>
-          )}
           <h3>
             指揮{' '}
-            <a
+            <LinkComponent
               className="use-title-conductor"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('wagner')
-              }}
+              onOpenArticle={() => props.onOpenArticle('wagner')}
+              children="Dieter Wagner"
               style={{marginRight: '1.9em'}}
-            >
-              Dieter Wagner
-            </a>
+            />
             <br />
             合唱{' '}
-            <a
+            <LinkComponent
               className="use-title-choir"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('balss')
-              }}
-            >
-              BALSS
-            </a>
+              onOpenArticle={() => props.onOpenArticle('balss')}
+              children="BALSS"
+            />
             /
-            <a
+            <LinkComponent
               className="use-title-choir"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('nova')
-              }}
-            >
-              CancaoNova
-            </a>
+              onOpenArticle={() => props.onOpenArticle('nova')}
+              children="CancaoNova"
+            />
             /
-            <a
+            <LinkComponent
               className="use-title-choir"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('tbyc')
-              }}
-            >
-              {/* Tokyo Bay Youth Choir */}
-              TBYC
-            </a>
+              onOpenArticle={() => props.onOpenArticle('tbyc')}
+              children="TBYC"
+            />
           </h3>
         </div>
       </div>
       <nav>
         <ul>
           <li>
-            <a
-              className="use-border"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('concept')
-              }}
-            >
-              CONCEPT
-            </a>
+            <LinkComponent className="use-border" onOpenArticle={() => props.onOpenArticle('concept')} children="CONCEPT" />
           </li>
           <li>
-            <a
-              className="use-border"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('explanation')
-              }}
-            >
-              Stage
-            </a>
+            <LinkComponent className="use-border" onOpenArticle={() => props.onOpenArticle('explanation')} children="Stage" />
           </li>
           <li>
-            <a
-              className="use-border"
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('access')
-              }}
-            >
-              Access
-            </a>
+            <LinkComponent className="use-border" onOpenArticle={() => props.onOpenArticle('access')} children="Access" />
           </li>
           <li>
-            <a
-              className="use-border"
-              href="javascript:;"
-              // href="https://passmarket.yahoo.co.jp/event/show/detail/02q449iuf2621.html"
-              onClick={() => {
-                props.onOpenArticle('ticket')
-              }}
-              // target="_blank"
-            >
-              Ticket
-              {/* Ticket <FontAwesomeIcon icon={faExternalLinkAlt} /> */}
-            </a>
+            <LinkComponent className="use-border" onOpenArticle={() => props.onOpenArticle('ticket')} children="Ticket" />
           </li>
         </ul>
       </nav>
     </header>
   )
 }
-
 
 Header.propTypes = {
   onOpenArticle: PropTypes.func,
