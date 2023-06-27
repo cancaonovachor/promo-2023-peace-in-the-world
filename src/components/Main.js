@@ -14,6 +14,7 @@ import {
   faYoutube,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons'
+import Article from './common/Articles'
 
 const Main = props => {
   let close = (
@@ -24,14 +25,6 @@ const Main = props => {
       }}
     ></div>
   )
-  // const [modalParam, _] = useQueryParam('modal', StringParam)
-  // console.log(modalParam)
-
-  // useEffect(() => {
-  //   if (modalParam) {
-  //     props.onOpenArticle(modalParam)
-  //   }
-  // }, [modalParam])
 
   return (
     <div
@@ -39,39 +32,11 @@ const Main = props => {
       id="main"
       style={props.timeout ? { display: 'flex' } : { display: 'none' }}
     >
-      <article
-        id="nova"
-        className={`${props.article === 'nova' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
-      >
-        <h2>
-          CancaoNova
-          <a
-            href="https://twitter.com/cancaonovachor"
-            style={{ marginRight: '13px', marginLeft: '25px' }}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            href="https://ja-jp.facebook.com/cancaonova.chorus/"
-            style={{ marginRight: '13px' }}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCyySqK-CQoeet4zudxY7dWQ"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-        </h2>
-        <span className="image-main main">
-          <img src={zentai} alt="" />
-        </span>
+      <Article
+        id="nova" article={props.article} articleTimeout={props.articleTimeout} title="CancaoNova" image={zentai}
+        twitterUrl={"https://twitter.com/cancaonovachor"}
+        facebookUrl={"https://ja-jp.facebook.com/cancaonova.chorus/"}
+        youtubeUrl={"https://www.youtube.com/channel/UCyySqK-CQoeet4zudxY7dWQ"}>
         <p>
           2016年7月創団。団名はポルトガル語で“新しい歌”。あっと驚くような合唱活動を志す合唱集団。出身母体/年齢/性別/居住地にとらわれない、新しいサウンド・合唱スタイルを目指して活動中。以下のような新しい取り組みを実施。
           <br /><br />
@@ -80,27 +45,11 @@ const Main = props => {
           第3,4回東京国際合唱コンクール同声合唱部門《カテゴリーウィナー》、第72回全日本合唱コンクール全国大会 同声合唱の部《銀賞》、第12回声楽アンサンブルコンテスト全国大会2019《金賞》（予選2位・本選出場）。
         </p>
         {close}
-      </article>
-      <article
-        id="balss"
-        className={`${props.article === 'balss' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
-      >
-        <h2>
-          BALSS
-          <a
-            href="https://twitter.com/risingsun226"
-            style={{ marginRight: '13px', marginLeft: '25px' }}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-        </h2>
-        <span className="image-main main">
-          <img src={balss} alt="" />
-        </span>
+      </Article>
+      <Article
+        id="balss" article={props.article} articleTimeout={props.articleTimeout} title="BALSS" image={balss}
+        twitterUrl={"https://twitter.com/risingsun226"}
+        >
         <p>
         常任指揮者の山脇卓也氏と数名が中心となり、2022年春に始動した新進気鋭の混声合唱団。
         <br/>団名はラトビア語で"声"という意味の単語からとったものであり、一人一人の声を大切にし繋げていくという思いが込められている。
@@ -108,27 +57,11 @@ const Main = props => {
         <br/>2022年軽井沢国際合唱コンクール金賞。
         </p>
         {close}
-      </article>
-      <article
-        id="tbyc"
-        className={`${props.article === 'tbyc' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
+      </Article>
+      <Article
+        id="tbyc" article={props.article} articleTimeout={props.articleTimeout} title="Tokyo Bay Youth Choir" image={tbyc}
+        twitterUrl={"https://twitter.com/TokyoBayYC"}
       >
-        <h2>
-          Tokyo Bay Youth Choir
-          <a
-            href="https://twitter.com/TokyoBayYC"
-            style={{ marginRight: '13px', marginLeft: '25px' }}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-        </h2>
-        <span className="image-main main">
-          <img src={tbyc} alt="" />
-        </span>
         <p>
         Tokyo Bay Youth Choir（通称TBYC）はオーストリアで合唱指揮を学んだ谷郁氏のもと、
         20代から30代のメンバーを中心に20名ほどで活動しているちょっぴりオトナなユース合唱団です。
@@ -137,18 +70,8 @@ const Main = props => {
         <br/>今回は公募メンバーを加えた特別編成合唱団として演奏いたします。
         </p>
         {close}
-      </article>
-      <article
-        id="wagner"
-        className={`${props.article === 'wagner' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
-      >
-        <h2 className="major">CONDUCTOR</h2>
-        <span className="image-main main">
-          <img src={wagner} alt="" />
-        </span>
+      </Article>
+      <Article id="wagner" article={props.article} articleTimeout={props.articleTimeout} title="CONDUCTOR" image={wagner}>
         <h3>Dieter Wagner / ディーター・ワーグナー（ドイツ）</h3>
         <p>
         教会音楽をドイツ・ハイデルベルク、声楽をスイス・バーゼルで学ぶ。
@@ -160,18 +83,8 @@ const Main = props => {
         日本では全日本合唱連盟主催･第25回コーラスワークショップin仙台（2015年）講師、第11回声楽アンサンブルコンテスト全国大会2018（福島県）審査員、第8回JCAユースクワイア（2019年）指揮者を務めている。
         </p>
         {close}
-      </article>
-      <article
-        id="concept"
-        className={`${props.article === 'concept' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
-      >
-          {/* <div class="youtube">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TMVrcz3AG7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-          </div> */}<h2 className="major">Concept</h2>        
+      </Article>
+      <Article id="concept" article={props.article} articleTimeout={props.articleTimeout} title="CONCEPT">
         <p>2023年9月21日、国連が定めた「国際平和デー」に、世界十数カ国の合唱団が24時間リレーで
           Karl Jenkins作曲「The Peacemakers」を演奏するコンサートを開催します。
           あらゆる人種・宗教・文化の人々が共に平和を作ることを表したこの曲を通じて、国籍や文化の違いを超えて平和への願いを共有します。
@@ -185,9 +98,6 @@ const Main = props => {
           props.onOpenArticle('explanation');
           }}>こちら</a> から
           </p>
-        
-        
-        
           <h3>世界配信</h3>
           <p>
             「国際平和デー」9月21日（木）、参加国で最初に20時を迎えるニュージーランドを皮切りに、タイムゾーンの順番に現地時間20時から各国の演奏が配信されます。日本の演奏配信は、日本時間19時半頃からを予定（配信環境等の事情により変更になる可能性があります）。企画団体TimeDateのウェブサイト上にて、本演奏会の抜粋動画をお送りします。配信期間10月8日まで（予定）。
@@ -206,16 +116,9 @@ const Main = props => {
             →日付確定したら各コンテンツに反映
           </p>
         {close}
-      </article>
-
-      <article
-      id="explanation"
-      className={`${props.article === 'explanation' ? 'active' : ''} ${
-        props.articleTimeout ? 'timeout' : ''
-      }`}
-      style={{ display: 'none' }}
-    >
-      <h2 className="major">Stage</h2>
+        </Article>
+      
+      <Article id="explanation" article={props.article} articleTimeout={props.articleTimeout} title="Stage">
       <h3>BALSS</h3>
       <p>
         <b>演奏曲：</b>
@@ -251,19 +154,9 @@ const Main = props => {
         <br></br>・Karl Jenkins - Dona nobis pacem
       </p>
       {close}
-    </article>
+    </Article>
 
-      <article
-        id="access"
-        className={`${props.article === 'access' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
-      >
-        <h2 className="major">Access</h2>
-        <span className="image-main main">
-          <img src={access} alt="" />
-        </span>
+      <Article id="access" article={props.article} articleTimeout={props.articleTimeout} title="Access" image={access}>
         <h3>
           八王子市芸術文化会館 <br />
           いちょうホール
@@ -288,16 +181,9 @@ const Main = props => {
           <br />
         </p>
         {close}
-      </article>
+      </Article>
 
-      <article
-        id="ticket"
-        className={`${props.article === 'ticket' ? 'active' : ''} ${
-          props.articleTimeout ? 'timeout' : ''
-        }`}
-        style={{ display: 'none' }}
-      >
-        <h2 className="major">Ticket</h2>
+      <Article id="ticket" article={props.article} articleTimeout={props.articleTimeout} title="Ticket">
         <h3>入場チケット (PassMarket)</h3>
         <span className="image-main main">
         <a href="https://passmarket.yahoo.co.jp/event/show/detail/023pm8ynq6r21.html" target="_blank">
@@ -324,7 +210,7 @@ const Main = props => {
         遠方にお住まいの方や当日現地にお越し頂けない方も、こちらよりライブ配信を視聴いただけます。
         </p>
         {close}
-      </article>
+      </Article>
     </div>
   )
 }
