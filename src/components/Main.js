@@ -105,8 +105,8 @@ const Main = props => {
           </p>
           <h3>国内配信</h3>
           <p>
-            本演奏会の全ステージ動画を、9月XX日(X)XX:XX- からZAIKOにて配信します。 現地に足を運ぶのが難しい方も、ぜひご覧ください。
-            →日付確定したら各コンテンツに反映
+            本演奏会の全ステージ動画を、9月30日(土)19:00- から
+            <a className='user-border' href='https://passmarket.yahoo.co.jp/event/show/detail/02bgiiyenk431.html' target='_blank'>ZAIKOにて配信</a>します。 現地に足を運ぶのが難しい方も、ぜひご覧ください。
           </p>
         {close}
         </Article>
