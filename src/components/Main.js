@@ -7,13 +7,6 @@ import haishin from '../images/cncn1.0-haishin.jpg'
 import nyujo from '../images/nyujo-min.png'
 import wagner from '../images/wagner.jpeg'
 import access from '../images/access.png'
-import { useQueryParam, StringParam } from 'use-query-params'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faTwitter,
-  faYoutube,
-  faFacebook,
-} from '@fortawesome/free-brands-svg-icons'
 import Article from './common/Articles'
 
 const Main = props => {
@@ -186,7 +179,7 @@ const Main = props => {
       <Article id="ticket" article={props.article} articleTimeout={props.articleTimeout} title="Ticket">
         <h3>入場チケット (PassMarket)</h3>
         <span className="image-main main">
-        <a href="https://passmarket.yahoo.co.jp/event/show/detail/023pm8ynq6r21.html" target="_blank">
+        <a href="https://passmarket.yahoo.co.jp/event/show/detail/02bgiiyenk431.html" target="_blank">
           <img src={nyujo} alt=""  />
           </a>
         </span>
