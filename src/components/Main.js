@@ -151,7 +151,7 @@ const Main = (props) => {
           本演奏会の全ステージ動画を、9月30日(土)19:00- から
           <a
             className="user-border"
-            href="https://passmarket.yahoo.co.jp/event/show/detail/02bgiiyenk431.html"
+            href="https://cancaonova.zaiko.io/item/357417"
             target="_blank"
           >
             ZAIKOにて配信
