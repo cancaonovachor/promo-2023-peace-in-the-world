@@ -167,6 +167,7 @@ const Main = (props) => {
         articleTimeout={props.articleTimeout}
         title="Stage"
       >
+        <h3>指揮 Dieter Wagner</h3>
         <h3>BALSS</h3>
         <p>
           <b>演奏曲：</b>
@@ -193,10 +194,6 @@ const Main = (props) => {
         </p>
         <br></br>
         <h3>合同演奏</h3>
-        <p>
-          スイス在住のドイツ人指揮者、Dieter Wagnerさんを迎え、Karl
-          Jenkins作曲「The Peacemakers」を演奏します。
-        </p>
         <p>
           <b>演奏曲：</b>
           <br></br>・Karl Jenkins - Peace, Peace!
