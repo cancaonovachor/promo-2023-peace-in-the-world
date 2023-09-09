@@ -8,6 +8,8 @@ import nyujo from "../images/nyujo-min.png";
 import wagner from "../images/wagner.jpeg";
 import access from "../images/access.png";
 import Article from "./common/Articles";
+import { useTranslation, Trans } from "react-i18next";
+import i18n from "../assets/langs/i18n";
 
 const Main = (props) => {
   let close = (
@@ -18,6 +20,8 @@ const Main = (props) => {
       }}
     ></div>
   );
+
+  const { t } = useTranslation();
 
   return (
     <div
@@ -35,16 +39,7 @@ const Main = (props) => {
         facebookUrl={"https://ja-jp.facebook.com/cancaonova.chorus/"}
         youtubeUrl={"https://www.youtube.com/channel/UCyySqK-CQoeet4zudxY7dWQ"}
       >
-        <p>
-          2016年7月創団。団名はポルトガル語で“新しい歌”。あっと驚くような合唱活動を志す合唱集団。出身母体/年齢/性別/居住地にとらわれない、新しいサウンド・合唱スタイルを目指して活動中。以下のような新しい取り組みを実施。
-          <br />
-          <br />
-          主な出演ステージは東京国際合唱コンクール、宝塚国際室内合唱コンクール、声楽アンサンブルコンテスト、全日本合唱コンクール。（2021年度）
-          <br />
-          <br />
-          第3,4回東京国際合唱コンクール同声合唱部門《カテゴリーウィナー》、第72回全日本合唱コンクール全国大会
-          同声合唱の部《銀賞》、第12回声楽アンサンブルコンテスト全国大会2019《金賞》（予選2位・本選出場）。
-        </p>
+        <Trans i18nKey="novaExp" components={{ p: <p />, br: <br /> }} />
         {close}
       </Article>
       <Article
@@ -55,15 +50,7 @@ const Main = (props) => {
         image={balss}
         twitterUrl={"https://twitter.com/risingsun226"}
       >
-        <p>
-          常任指揮者の山脇卓也氏と数名が中心となり、2022年春に始動した新進気鋭の混声合唱団。
-          <br />
-          団名はラトビア語で"声"という意味の単語からとったものであり、一人一人の声を大切にし繋げていくという思いが込められている。
-          <br />
-          現在は年齢も出身も様々な約50名が在籍し、毎週土曜昼に練習している。
-          <br />
-          2022年軽井沢国際合唱コンクール金賞。
-        </p>
+        <Trans i18nKey="balssExp" components={{ p: <p />, br: <br /> }} />
         {close}
       </Article>
       <Article
@@ -74,16 +61,7 @@ const Main = (props) => {
         image={tbyc}
         twitterUrl={"https://twitter.com/TokyoBayYC"}
       >
-        <p>
-          Tokyo Bay Youth
-          Choir（通称TBYC）はオーストリアで合唱指揮を学んだ谷郁氏のもと、
-          20代から30代のメンバーを中心に20名ほどで活動しているちょっぴりオトナなユース合唱団です。
-          <br />
-          ドイツ語圏を中心にヨーロッパで広く歌われている合唱作品を主なレパートリーとしており、
-          2021年9月に行われた東京国際合唱コンクールでは室内合唱部門１位をいただきました。
-          <br />
-          今回は公募メンバーを加えた特別編成合唱団として演奏いたします。
-        </p>
+        <Trans i18nKey="tbycExp" components={{ p: <p />, br: <br /> }} />
         {close}
       </Article>
       <Article
