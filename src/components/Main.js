@@ -119,7 +119,6 @@ const Main = (props) => {
           <br></br>・Beati Mortui - Felix Mendelssohn
           <br></br>・Die Minnesänger - Robert Schumann
           <br></br>・Fröhlich im Maien - Richard Strauss
-          <br></br>・Tenebrae - Marcus Ludwig
         </p>
         <br></br>
         <h3>Tokyo Bay Youth Choir</h3>
